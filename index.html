@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cenk Torun: The Cinematic Fan Hub</title>
-    <!-- Google Fonts for that Cinematic Drama feel -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --gold: #b8860b;
@@ -24,7 +24,7 @@
 
         h1, h2 { font-family: 'Playfair Display', serif; }
 
-        /* Navbar */
+        /* Navigation */
         nav {
             background: rgba(0,0,0,0.9);
             padding: 20px 5%;
@@ -50,11 +50,11 @@
 
         .lang-btns button:hover { background: var(--gold); color: black; }
 
-        /* Hero Section */
+        /* Hero */
         .hero {
-            height: 80vh;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.3), var(--bg-black)), 
-                        url('https://via.placeholder.com/1920x1080/1a1a1a/gold?text=Cenk+Torun+Cinematic+Hero'); /* Replace with a high-res Cenk photo */
+            height: 70vh;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4), var(--bg-black)), 
+                        url('https://via.placeholder.com/1920x1080/111/gold?text=Cenk+Torun+Hero'); 
             background-size: cover;
             background-position: center;
             display: flex;
@@ -65,37 +65,28 @@
             padding: 0 20px;
         }
 
-        .hero h1 { font-size: 4rem; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.8); }
+        .hero h1 { font-size: 3.5rem; margin: 0; }
 
-        /* Adsterra Top Banner Slot */
-        .ad-container {
-            width: 100%;
-            max-width: 728px;
-            height: 90px;
-            background: var(--glass);
-            margin: 20px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px dashed #333;
+        /* Ad Slots */
+        .ad-banner {
+            width: 100%; max-width: 728px; height: 90px;
+            background: var(--glass); margin: 20px auto;
+            display: flex; align-items: center; justify-content: center;
+            border: 1px dashed #444;
         }
 
-        /* Content Sections */
+        /* Grid */
         .content-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 50px 5%;
+            gap: 20px; padding: 40px 5%;
         }
 
         .card {
-            background: var(--glass);
-            padding: 20px;
+            background: var(--glass); padding: 25px;
             border-left: 4px solid var(--gold);
             transition: 0.3s;
         }
-
-        .card:hover { background: rgba(255,255,255,0.15); transform: translateY(-5px); }
 
         .btn-action {
             display: inline-block;
@@ -105,7 +96,28 @@
             text-decoration: none;
             margin-top: 15px;
             font-weight: bold;
-            border-radius: 2px;
+            cursor: pointer;
+            border: none;
+        }
+
+        /* VIDEO VAULT MODAL */
+        .video-vault {
+            display: none; position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95); z-index: 2000;
+            justify-content: center; align-items: center;
+        }
+
+        .vault-content {
+            width: 90%; max-width: 400px;
+            border: 2px solid var(--gold);
+            position: relative;
+            background: #000;
+        }
+
+        .close-vault {
+            position: absolute; top: -45px; right: 0;
+            color: var(--gold); font-size: 35px; cursor: pointer;
         }
     </style>
 </head>
@@ -123,73 +135,61 @@
 <section class="hero">
     <h1 id="hero-title">The Legend Returns</h1>
     <p id="hero-sub">Exclusive insights into the life of Cenk Torun.</p>
-    <!-- PLACEHOLDER FOR ADSTERRA SMARTLINK -->
-    <a href="https://blessingrecordpleasant.com/b4ep65dt14?key=0dcb056279c80bbed9e40391a0765eac" class="btn-action" id="hero-btn">VIEW LATEST EPISODE UPDATES</a>
+    <!-- Adsterra Smartlink goes here -->
+    <a href="https://blessingrecordpleasant.com/b4ep65dt14?key=0dcb056279c80bbed9e40391a0765eac" class="btn-action" id="hero-btn">LATEST NEWS</a>
 </section>
 
-<!-- TOP BANNER AD AREA -->
-<div class="ad-container">
-
+<!-- Adsterra Banner Slot -->
+<div class="ad-banner">
     <script async="async" data-cfasync="false" src="https://blessingrecordpleasant.com/5ed03cd0176a00d4d55c21623fb7707d/invoke.js"></script>
 <div id="container-5ed03cd0176a00d4d55c21623fb7707d"></div>
     
-    <p style="color:#444; font-size: 12px;">ADVERTISEMENT</p>
+    <p style="color:#555; font-size: 10px;">PROMOTED CONTENT</p>
 </div>
 
 <section class="content-grid">
     <div class="card">
-        <h2 id="card1-title">The "OrHir" Legacy</h2>
-        <p id="card1-text">Deep dive into the chemistry between Orhun and Hira in Esaret Season 3.</p>
-        <a href="#" class="btn-action">READ MORE</a>
+        <h2 id="card1-title">The 'OrHir' Legacy</h2>
+        <p id="card1-text">Deep dive into the chemistry between Orhun and Hira.</p>
+        <button class="btn-action" onclick="alert('Redirecting to full article...')">READ MORE</button>
     </div>
 
     <div class="card">
-        <h2 id="card2-title">Scandal & Truth</h2>
-        <p id="card2-text">The latest news regarding the recent rumors and legal updates.</p>
-        <a href="#" class="btn-action">VIEW DETAILS</a>
-    </div>
-
-    <div class="card">
-        <h2 id="card3-title">Style Transitions</h2>
-        <p id="card3-text">Watch exclusive visual transitions of Cenk's most iconic looks.</p>
-        <a href="#" class="btn-action">WATCH NOW</a>
+        <h2 id="card2-title">Style Transitions</h2>
+        <p id="card2-text">Watch exclusive visual transitions of Cenk's most iconic looks.</p>
+        <button class="btn-action" id="watch-btn" onclick="openVault()">WATCH NOW</button>
     </div>
 </section>
+
+<!-- The Video Pop-up -->
+<div id="videoVault" class="video-vault">
+    <div class="vault-content">
+        <span class="close-vault" onclick="closeVault()">&times;</span>
+        <video id="cenkVideo" width="100%" controls loop>
+            <source src="cenk.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
 
 <script>
     const content = {
         en: {
-            title: "The Legend Returns",
-            sub: "Exclusive insights into the life of Cenk Torun.",
-            btn: "VIEW LATEST EPISODE UPDATES",
-            c1t: "The 'OrHir' Legacy",
-            c1p: "Deep dive into the chemistry between Orhun and Hira in Esaret Season 3.",
-            c2t: "Scandal & Truth",
-            c2p: "The latest news regarding the recent rumors and legal updates.",
-            c3t: "Style Transitions",
-            c3p: "Watch exclusive visual transitions of Cenk's most iconic looks."
+            title: "The Legend Returns", sub: "Exclusive insights into the life of Cenk Torun.",
+            btn: "LATEST NEWS", c1t: "The 'OrHir' Legacy", c1p: "Deep dive into the chemistry between Orhun and Hira.",
+            c2t: "Style Transitions", c2p: "Watch exclusive visual transitions of Cenk's most iconic looks.",
+            watch: "WATCH NOW"
         },
         ro: {
-            title: "Legenda se Întoarce",
-            sub: "Informații exclusive despre viața lui Cenk Torun.",
-            btn: "VEZI NOILE EPISOADE",
-            c1t: "Moștenirea 'OrHir'",
-            c1p: "Analiză detaliată a chimiei dintre Orhun și Hira în Sezonul 3 Esaret.",
-            c2t: "Scandal și Adevăr",
-            c2p: "Cele mai noi știri despre zvonurile recente și actualizări legale.",
-            c3t: "Tranziții de Stil",
-            c3p: "Urmărește tranziții vizuale exclusive cu cele mai iconice look-uri ale lui Cenk."
+            title: "Legenda se Întoarce", sub: "Informații exclusive despre viața lui Cenk Torun.",
+            btn: "ULTIMELE ȘTIRI", c1t: "Moștenirea 'OrHir'", c1p: "Analiză detaliată a chimiei dintre Orhun și Hira.",
+            c2t: "Tranziții de Stil", c2p: "Urmărește tranziții vizuale exclusive cu look-urile lui Cenk.",
+            watch: "VEZI ACUM"
         },
         bg: {
-            title: "Легендата се завръща",
-            sub: "Ексклузивен поглед върху живота на Дженк Торун.",
-            btn: "ВИЖТЕ НОВИТЕ ЕПИЗОДИ",
-            c1t: "Наследството 'OrHir'",
-            c1p: "Дълбоко гмуркане в химията между Орхун и Хира в Сезон 3 на Esaret.",
-            c2t: "Скандал и истина",
-            c2p: "Последни новини относно скорошните слухове и правни актуализации.",
-            c3t: "Стилни преходи",
-            c3p: "Гледайте ексклузивни визуални преходи на най-емблематичните визии на Дженк."
+            title: "Легендата се завръща", sub: "Ексклузивен поглед върху живота на Дженк Торун.",
+            btn: "ПОСЛЕДНИ НОВИНИ", c1t: "Наследството 'OrHir'", c1p: "Дълбоко гмуркане в химията между Орхун и Хира.",
+            c2t: "Стилни преходи", c2p: "Гледайте ексклузивни визуални преходи на Дженк.",
+            watch: "ГЛЕДАЙ СЕГА"
         }
     };
 
@@ -201,12 +201,21 @@
         document.getElementById('card1-text').innerText = content[lang].c1p;
         document.getElementById('card2-title').innerText = content[lang].c2t;
         document.getElementById('card2-text').innerText = content[lang].c2p;
-        document.getElementById('card3-title').innerText = content[lang].c3t;
-        document.getElementById('card3-text').innerText = content[lang].c3p;
+        document.getElementById('watch-btn').innerText = content[lang].watch;
+    }
+
+    function openVault() {
+        document.getElementById('videoVault').style.display = 'flex';
+        document.getElementById('cenkVideo').play();
+    }
+
+    function closeVault() {
+        document.getElementById('videoVault').style.display = 'none';
+        document.getElementById('cenkVideo').pause();
     }
 </script>
 
     <script src="https://blessingrecordpleasant.com/6d/1e/be/6d1ebe42fda6885c85819e5779b078e5.js"></script>
     
 </body>
-        </html>
+            </html>

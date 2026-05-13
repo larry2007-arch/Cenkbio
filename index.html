@@ -1,433 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5488858626594897"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cenk Torun - Official Biography, Filmography & News</title>
-    <meta name="description" content="Discover the comprehensive biography of Turkish actor Cenk Torun. From his early days in Çılgın Bediş to his global success as Orhun Demirhanlı in Esaret.">
-    <meta name="google-adsense-account" content="ca-pub-5488858626594897">
-    <meta name="keywords" content="Cenk Torun, Cenk Torun biography, Orhun Demirhanlı, Esaret, Çılgın Bediş Oktay, Turkish actor, Mahassine Merabet, Cenk Torun wife, Cenk Torun age">
-    <meta name="author" content="Cenk Torun Fan Network">
-    <link rel="canonical" href="https://cenkasiklar.netlify.app/">
-    
-    <!-- Tailwind CSS for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <title>Cenk Torun: The Cinematic Fan Hub</title>
+    <!-- Google Fonts for that Cinematic Drama feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
-        h1, h2, h3, h4, .serif { font-family: 'Merriweather', serif; }
-        .ad-placeholder { background: #e2e8f0; border: 1px dashed #94a3b8; display: flex; align-items: center; justify-content: center; color: #64748b; font-size: 0.875rem; margin: 2rem 0; width: 100%; height: 250px; }
-        .tab-content { display: none; }
-        .tab-content.active { display: block; animation: fadeIn 0.5s ease-in-out; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        .nav-link.active { border-bottom: 2px solid #0f172a; color: #0f172a; font-weight: 600; }
-        .lang-tr { display: none; } /* Hidden by default */
+        :root {
+            --gold: #b8860b;
+            --deep-red: #8b0000;
+            --bg-black: #0a0a0a;
+            --glass: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+
+        h1, h2 { font-family: 'Playfair Display', serif; }
+
+        /* Navbar */
+        nav {
+            background: rgba(0,0,0,0.9);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--gold);
+            position: sticky; top: 0; z-index: 1000;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 3px; }
+        .logo span { color: var(--gold); }
+
+        .lang-btns button {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-left: 5px;
+            transition: 0.3s;
+        }
+
+        .lang-btns button:hover { background: var(--gold); color: black; }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), var(--bg-black)), 
+                        url('https://via.placeholder.com/1920x1080/1a1a1a/gold?text=Cenk+Torun+Cinematic+Hero'); /* Replace with a high-res Cenk photo */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 4rem; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.8); }
+
+        /* Adsterra Top Banner Slot */
+        .ad-container {
+            width: 100%;
+            max-width: 728px;
+            height: 90px;
+            background: var(--glass);
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #333;
+        }
+
+        /* Content Sections */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px 5%;
+        }
+
+        .card {
+            background: var(--glass);
+            padding: 20px;
+            border-left: 4px solid var(--gold);
+            transition: 0.3s;
+        }
+
+        .card:hover { background: rgba(255,255,255,0.15); transform: translateY(-5px); }
+
+        .btn-action {
+            display: inline-block;
+            background: var(--deep-red);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: bold;
+            border-radius: 2px;
+        }
     </style>
-
-    <!-- Schema.org JSON-LD for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Cenk Torun",
-      "birthDate": "1974-03-24",
-      "birthPlace": {
-        "@type": "Place",
-        "name": "Ankara, Turkey"
-      },
-      "jobTitle": "Actor",
-      "knownFor": [
-        {
-          "@type": "TVSeries",
-          "name": "Esaret",
-          "characterName": "Orhun Demirhanlı"
-        },
-        {
-          "@type": "TVSeries",
-          "name": "Çılgın Bediş",
-          "characterName": "Oktay"
-        }
-      ],
-      "parent": {
-        "@type": "Person",
-        "name": "Nurdan Torun"
-      }
-    }
-    </script>
 </head>
-<body class="text-slate-800 antialiased">
+<body>
 
-    <!-- Header & Navigation -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0 flex items-center">
-                    <span class="font-bold text-2xl tracking-tight text-slate-900 serif">Cenk Torun <span class="text-blue-600">Archive</span></span>
-                </div>
-                <nav class="hidden md:flex space-x-8">
-                    <button onclick="switchTab('bio')" id="tab-bio" class="nav-link active text-slate-500 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors">
-                        <span class="lang-en">Biography</span><span class="lang-tr">Biyografi</span>
-                    </button>
-                    <button onclick="switchTab('filmography')" id="tab-filmography" class="nav-link text-slate-500 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors">
-                        <span class="lang-en">Filmography</span><span class="lang-tr">Filmografi</span>
-                    </button>
-                    <button onclick="switchTab('legal')" id="tab-legal" class="nav-link text-slate-500 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors">
-                        <span class="lang-en">Privacy & Legal</span><span class="lang-tr">Gizlilik Politikası</span>
-                    </button>
-                </nav>
-                <div class="flex items-center space-x-2 border-l pl-4 ml-4">
-                    <button onclick="setLanguage('en')" id="btn-en" class="font-bold text-blue-600 hover:text-blue-800 focus:outline-none">EN</button>
-                    <span class="text-slate-300">|</span>
-                    <button onclick="setLanguage('tr')" id="btn-tr" class="text-slate-500 hover:text-blue-800 focus:outline-none">TR</button>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <div class="bg-slate-900 text-white py-20 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-20 bg-center bg-cover" style="background-image: url('https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&q=80');"></div>
-        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4 serif shadow-sm">Cenk Torun</h1>
-            <p class="text-xl md:text-2xl text-slate-300 font-light lang-en">From 90s Television Icon to Global Drama Phenomenon</p>
-            <p class="text-xl md:text-2xl text-slate-300 font-light lang-tr">90'ların Televizyon İkonundan Küresel Drama Fenomenine</p>
-        </div>
+<nav>
+    <div class="logo">CENK <span>ULTIMATE</span></div>
+    <div class="lang-btns">
+        <button onclick="changeLang('en')">EN</button>
+        <button onclick="changeLang('ro')">RO</button>
+        <button onclick="changeLang('bg')">BG</button>
     </div>
+</nav>
 
-    <!-- Main Content Area -->
-    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white shadow-xl -mt-8 rounded-lg relative z-20">
-        
-        <!-- BIOGRAPHY TAB -->
-        <article id="content-bio" class="tab-content active prose prose-lg prose-slate max-w-none">
-            
-            <!-- ENGLISH BIOGRAPHY (Over 1000 words) -->
-            <div class="lang-en">
-                <h2 class="text-3xl font-bold border-b pb-2 mb-6">The Complete Biography of Cenk Torun</h2>
-                
-                <h3 class="text-2xl font-semibold mt-8 mb-4">Introduction to a Television Legend</h3>
-                <p class="mb-4 text-justify">Cenk Torun stands as a monumental figure in the landscape of Turkish television, a man whose career bridges the gap between the nostalgic, culturally formative series of the late 1990s and the explosive, globally dominant era of modern Turkish dramas. Known initially as the ultimate heartthrob of a generation and later as a complex, mature leading man, Torun's journey through the entertainment industry is a masterclass in resilience, reinvention, and undeniable talent. His life story is not just a chronological list of television appearances; it is a profound narrative of immense early success, devastating personal tragedy, a necessary hiatus, and ultimately, one of the most remarkable comebacks in contemporary acting history.</p>
+<section class="hero">
+    <h1 id="hero-title">The Legend Returns</h1>
+    <p id="hero-sub">Exclusive insights into the life of Cenk Torun.</p>
+    <!-- PLACEHOLDER FOR ADSTERRA SMARTLINK -->
+    <a href="https://blessingrecordpleasant.com/b4ep65dt14?key=0dcb056279c80bbed9e40391a0765eac" class="btn-action" id="hero-btn">VIEW LATEST EPISODE UPDATES</a>
+</section>
 
-                <p class="mb-4 text-justify">Today, recognized across continents for his gripping portrayal of Orhun Demirhanlı in the international hit series <em>Esaret</em> (Redemption), Cenk Torun commands a fanbase that spans from the Middle East to South America, Europe, and Asia. Yet, to truly understand the depth he brings to his modern roles, one must examine the foundation of his life, his early artistic influences, and the trials that shaped him.</p>
-                <script async="async" data-cfasync="false" src="https://pl29420753.profitablecpmratenetwork.com/5ed03cd0176a00d4d55c21623fb7707d/invoke.js"></script>
+<!-- TOP BANNER AD AREA -->
+<div class="ad-container">
+
+    <script async="async" data-cfasync="false" src="https://blessingrecordpleasant.com/5ed03cd0176a00d4d55c21623fb7707d/invoke.js"></script>
 <div id="container-5ed03cd0176a00d4d55c21623fb7707d"></div>
-                
-
-                <!-- AdSense Placeholder -->
-                <div class="ad-placeholder">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5488858626594897"
-     crossorigin="anonymous"></script>
-<!-- cenk1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5488858626594897"
-     data-ad-slot="4992659186"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-                <script async="async" data-cfasync="false" src="https://pl29420753.profitablecpmratenetwork.com/5ed03cd0176a00d4d55c21623fb7707d/invoke.js"></script>
-<div id="container-5ed03cd0176a00d4d55c21623fb7707d"></div>
-
-                </div>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">Early Life, Education, and Musical Roots</h3>
-                <p class="mb-4 text-justify">Cenk Torun was born on March 24, 1974, in the vibrant capital city of Ankara, Turkey. He was born into a family where artistry was not just appreciated but lived daily. His mother is the celebrated Turkish classical music singer Nurdan Torun. Growing up in the constant presence of music, rehearsals, and the demanding life of a performing artist, young Cenk was exposed to the realities of the entertainment world early on. He often describes this upbringing as breathing in "stage dust"—a Turkish idiom that refers to the infectious, inescapable pull of the performing arts that gets into a person's lungs and never leaves.</p>
-
-                <p class="mb-4 text-justify">Despite his clear artistic inclinations, Torun pursued a pragmatic educational path. He attended and graduated from Marmara University, securing a degree in Tourism and Hotel Management. This educational background would later prove to be an invaluable safety net during the darkest periods of his life. Concurrently, recognizing his passion for the camera, he studied acting at the prestigious Müjdat Gezen Art Center, a legendary institution responsible for training some of Turkey's finest theatrical and cinematic talents.</p>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">The 1990s and the Explosion of Çılgın Bediş</h3>
-                <p class="mb-4 text-justify">Torun's first major public exposure did not come from a television script, but rather from a music video. In 1994, he starred in the video clip for Yıldız Tilbe's massive hit song "Delikanlım." His striking looks and undeniable screen presence immediately caught the attention of producers. Shortly after, he made brief television appearances, but it was in 1996 that his life changed forever.</p>
-
-                <p class="mb-4 text-justify">Cast as "Oktay" in the teen comedy series <em>Çılgın Bediş</em> (Crazy Bediş), which was adapted from a popular comic strip by Özden Öğrük, Torun became an overnight sensation. The show was a cultural phenomenon in Turkey, capturing the zeitgeist of 90s youth culture. Oktay was the handsome, sometimes oblivious, but deeply beloved romantic interest of the title character. Torun's face covered teen magazines; he was mobbed in public, and he solidified his status as the premier leading man for the younger demographic. The series ran successfully until 2001, etching Cenk Torun's name permanently into Turkish pop culture.</p>
-
-                <!-- AdSense Placeholder -->
-                <div class="ad-placeholder"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5488858626594897"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5488858626594897"
-     data-ad-slot="9502749831"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-                
-                <script src="https://pl29421094.profitablecpmratenetwork.com/6d/1e/be/6d1ebe42fda6885c85819e5779b078e5.js"></script>
-                </div>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">Crossroads: The Valley of the Wolves Regret</h3>
-                <p class="mb-4 text-justify">As the early 2000s approached, Torun faced mandatory military service. Right before his deployment, he was offered a role that would become legendary in Turkish television history: the character of Polat Alemdar in the mafia epic <em>Kurtlar Vadisi</em> (Valley of the Wolves). Believing that a mafia-centric show would not resonate with audiences and feeling typecast as the "handsome romantic lead," Torun declined the offer. The show went on to become one of the longest-running, highest-rated, and most politically influential series in Turkish history. In numerous later interviews, Torun openly admitted this was the greatest professional regret of his life, a fascinating "what-if" in the annals of Turkish TV.</p>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">Tragedy, Hiatus, and the Culinary Pivot</h3>
-                <p class="mb-4 text-justify">The turning point of Torun's life arrived with profound sorrow. On the very day he was discharged from his military service in 2003, his father, Enver Torun, tragically and suddenly passed away. The confluence of transitioning back to civilian life, the immense pressure of fame, and the shattering grief of losing his father caused a severe psychological trauma. In his own words, it caused a "huge explosion in his soul."</p>
-
-                <p class="mb-4 text-justify">Unable to find the emotional reserves required to perform, Torun walked away from the camera. He utilized his university degree and entered the business world, opening and managing a restaurant. For years, he lived the grueling life of a restaurateur, working morning to night in a completely different industry. This period of hiatus allowed him to heal, mature, and focus on his personal life. He married Nevin Ursavaş, and together they had a son, Şan Torun, prioritizing family stability over the chaotic life of a celebrity.</p>
-
-                <!-- AdSense Placeholder -->
-                <div class="ad-placeholder"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5488858626594897"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5488858626594897"
-     data-ad-slot="9502749831"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-               <script async="async" data-cfasync="false" src="https://pl29420753.profitablecpmratenetwork.com/5ed03cd0176a00d4d55c21623fb7707d/invoke.js"></script>
-<div id="container-5ed03cd0176a00d4d55c21623fb7707d"></div>
- 
-                </div>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">The Grand Return to the Screen</h3>
-                <p class="mb-4 text-justify">The "stage dust" never truly left his lungs. As years passed, the pull of acting returned. Torun slowly reintegrated into the industry, taking on guest roles and supporting characters. However, the industry had evolved massively. The era of dubbing was over; actors now had to memorize vast scripts and perform with live sound recording. Torun admitted to struggling initially with the technological and stylistic leaps the industry had taken during his absence. Yet, his work ethic prevailed. He painstakingly memorized not only his lines but the lines of his co-stars to ensure flawless performances. His significant return came with roles in series like <em>Yeter</em> and the daily soap <em>Adını Sen Koy</em>, proving he had transitioned beautifully from a teen idol to a distinguished character actor.</p>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">The Esaret Era: A Global Phenomenon</h3>
-                <p class="mb-4 text-justify">In 2022, Cenk Torun landed the role of a lifetime: Orhun Demirhanlı in the daily drama series <em>Esaret</em> (Redemption). Produced by Karamel Yapım, the series tells the dark, intense story of Orhun, a wealthy, ruthless businessman who believes a young woman named Hira (played by Moroccan actress Mahassine Merabet) is responsible for the death of his twin sister in Eritrea. Seeking vengeance, he takes Hira captive, brings her to Turkey, and eventually marries her to spite his cold-hearted, elitist mother, Afife.</p>
-
-                <p class="mb-4 text-justify">The daily soap format is notoriously grueling, requiring actors to shoot the equivalent of a feature film every week. Torun’s disciplined background in business management surprisingly prepared him for this relentless schedule. His chemistry with Mahassine Merabet sparked a massive global fandom, dubbed "#OrHir" across social media platforms like Twitter, Instagram, and YouTube. Viewers worldwide were captivated by his ability to portray Orhun's transition from a man consumed by vengeance to one battling a profound, reluctant love.</p>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">Conclusion: The Enduring Legacy</h3>
-                <p class="mb-4 text-justify">Cenk Torun's career is a testament to longevity in a notoriously fickle industry. He has experienced the dizzying heights of teen stardom, survived crushing personal grief, humbled himself by starting over in a new profession, and ultimately clawed his way back to the zenith of television acting. Today, in his fifties, he is arguably more famous globally than he was during the peak of his 90s fame in Turkey. His legacy is one of continuous evolution, proving that true talent, combined with perseverance, will always find its way back to the spotlight.</p>
-            </div>
-
-            <!-- TURKISH BIOGRAPHY (Over 1000 words) -->
-            <div class="lang-tr">
-                <h2 class="text-3xl font-bold border-b pb-2 mb-6">Cenk Torun'un Kapsamlı Biyografisi</h2>
-                
-                <h3 class="text-2xl font-semibold mt-8 mb-4">Bir Televizyon Efsanesine Giriş</h3>
-                <p class="mb-4 text-justify">Cenk Torun, Türk televizyon tarihinin en önemli figürlerinden biri olarak, 1990'ların sonundaki nostaljik, kültürel olarak şekillendirici diziler dönemi ile günümüz Türk dramalarının patlayıcı, küresel olarak baskın dönemi arasında köprü kuran bir kariyere sahiptir. Başlangıçta bir neslin nihai "jönü" ve daha sonra karmaşık, olgun bir başrol oyuncusu olarak bilinen Torun'un eğlence sektöründeki yolculuğu; dayanıklılık, kendini yeniden icat etme ve inkar edilemez bir yeteneğin ustalık sınıfıdır. Hayat hikayesi sadece televizyon görünümlerinin kronolojik bir listesi değil; muazzam bir erken başarının, yıkıcı kişisel trajedilerin, zorunlu bir aranın ve nihayetinde çağdaş oyunculuk tarihindeki en dikkate değer geri dönüşlerden birinin derin bir anlatısıdır.</p>
-
-                <p class="mb-4 text-justify">Bugün, uluslararası hit dizi <em>Esaret</em>'teki Orhun Demirhanlı karakterini çarpıcı bir şekilde canlandırmasıyla kıtalar ötesinde tanınan Cenk Torun, Orta Doğu'dan Güney Amerika'ya, Avrupa'dan Asya'ya uzanan bir hayran kitlesine hükmediyor. Ancak, modern rollerine kattığı derinliği gerçekten anlamak için hayatının temellerini, erken sanatsal etkilerini ve onu şekillendiren zorlukları incelemek gerekir.</p>
-
-                <!-- AdSense Placeholder -->
-                <div class="ad-placeholder">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5488858626594897"
-     crossorigin="anonymous"></script>
-<!-- cenk1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5488858626594897"
-     data-ad-slot="4992659186"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-                </div>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">İlk Yıllar, Eğitim ve Müzikal Kökler</h3>
-                <p class="mb-4 text-justify">Cenk Torun, 24 Mart 1974'te Türkiye'nin hareketli başkenti Ankara'da doğdu. Sanatın sadece takdir edilmekle kalmayıp her gün yaşandığı bir ailede dünyaya geldi. Annesi, ünlü Türk sanat müziği sanatçısı Nurdan Torun'dur. Müziğin, provaların ve bir sahne sanatçısının zorlu hayatının sürekli varlığıyla büyüyen genç Cenk, eğlence dünyasının gerçekleriyle erkenden tanıştı. Torun, bu yetişme tarzını genellikle "sahne tozu" yutmak olarak tanımlar - bu, sahne sanatlarının insanın ciğerlerine işleyen ve asla çıkmayan o bulaşıcı, kaçınılmaz çekiciliğini ifade eden bir Türk deyimidir.</p>
-
-                <p class="mb-4 text-justify">Açık sanatsal eğilimlerine rağmen Torun, pragmatik bir eğitim yolu izledi. Marmara Üniversitesi'ne giderek Turizm ve Otel İşletmeciliği bölümünden mezun oldu. Bu eğitim geçmişi, daha sonra hayatının en karanlık dönemlerinde paha biçilmez bir güvenlik ağı olduğunu kanıtlayacaktı. Aynı zamanda, kameraya olan tutkusunu fark ederek, Türkiye'nin en iyi tiyatro ve sinema yeteneklerinden bazılarını yetiştiren efsanevi bir kurum olan Müjdat Gezen Sanat Merkezi'nde oyunculuk eğitimi aldı.</p>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">1990'lar ve Çılgın Bediş Patlaması</h3>
-                <p class="mb-4 text-justify">Torun'un kamuoyuyla ilk büyük tanışması bir televizyon senaryosuyla değil, bir müzik videosuyla oldu. 1994 yılında Yıldız Tilbe'nin büyük hit şarkısı "Delikanlım"ın klibinde oynadı. Çarpıcı görünümü ve inkar edilemez ekran varlığı hemen yapımcıların dikkatini çekti. Kısa bir süre sonra küçük televizyon rollerinde yer aldı, ancak hayatını sonsuza dek değiştiren yıl 1996 oldu.</p>
-
-                <p class="mb-4 text-justify">Özden Öğrük'ün popüler çizgi romanından uyarlanan gençlik komedi dizisi <em>Çılgın Bediş</em>'te "Oktay" karakteri olarak rol alan Torun, bir gecede sansasyon yarattı. Dizi, 90'ların gençlik kültürünün ruhunu yakalayarak Türkiye'de kültürel bir fenomen haline geldi. Oktay, baş karakterin yakışıklı, bazen habersiz ama derinden sevilen romantik ilgi odağıydı. Torun'un yüzü gençlik dergilerini kapladı; halka açık yerlerde etrafı sarıldı ve genç demografi için bir numaralı başrol oyuncusu statüsünü sağlamlaştırdı. Dizi 2001 yılına kadar başarıyla devam etti ve Cenk Torun adını Türk popüler kültürüne kalıcı olarak kazıdı.</p>
-
-                <!-- AdSense Placeholder -->
-                <div class="ad-placeholder">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5488858626594897"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5488858626594897"
-     data-ad-slot="9502749831"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-                
-                
-               <script src="https://pl29421094.profitablecpmratenetwork.com/6d/1e/be/6d1ebe42fda6885c85819e5779b078e5.js"></script>
- </div>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">Yol Ayrımı: Kurtlar Vadisi Pişmanlığı</h3>
-                <p class="mb-4 text-justify">2000'li yılların başı yaklaşırken Torun, zorunlu askerlik hizmetiyle karşı karşıya kaldı. Askere gitmeden hemen önce, ona Türk televizyon tarihinde efsaneleşecek bir rol teklif edildi: mafya destanı <em>Kurtlar Vadisi</em>'ndeki Polat Alemdar karakteri. Mafya odaklı bir dizinin izleyicide yankı bulmayacağına inanan ve "yakışıklı romantik başrol" olarak tipikleştirildiğini hisseden Torun, teklifi reddetti. Dizi, Türk tarihinin en uzun soluklu, en yüksek reytingli ve politik olarak en etkili dizilerinden biri haline geldi. Daha sonraki birçok röportajında Torun, bunun hayatının en büyük profesyonel pişmanlığı olduğunu açıkça itiraf etti; Türk televizyon tarihinde büyüleyici bir "ya olsaydı" hikayesi.</p>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">Trajedi, Ara Verme ve İş Dünyasına Dönüş</h3>
-                <p class="mb-4 text-justify">Torun'un hayatının dönüm noktası derin bir acıyla geldi. 2003 yılında askerlikten terhis olduğu gün, babası Enver Torun aniden ve trajik bir şekilde vefat etti. Sivil hayata dönüş, şöhretin getirdiği yoğun baskı ve babasını kaybetmenin sarsıcı kederinin bir araya gelmesi şiddetli bir psikolojik travmaya neden oldu. Kendi deyimiyle, ruhunda "büyük bir patlamaya" yol açtı.</p>
-
-                <p class="mb-4 text-justify">Oyunculuk yapmak için gereken duygusal rezervleri bulamayan Torun, kameradan uzaklaştı. Üniversite diplomasını kullanarak iş dünyasına girdi ve bir restoran açıp işletti. Yıllarca, bambaşka bir sektörde sabahtan akşama kadar çalışarak yorucu bir işletmecilik hayatı yaşadı. Bu ara verme dönemi onun iyileşmesine, olgunlaşmasına ve özel hayatına odaklanmasına olanak sağladı. Nevin Ursavaş ile evlendi ve Şan Torun adında bir oğulları oldu; ailenin istikrarını bir ünlünün kaotik hayatına tercih etti.</p>
-
-                <!-- AdSense Placeholder -->
-                <div class="ad-placeholder"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5488858626594897"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5488858626594897"
-     data-ad-slot="9502749831"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-                
-            <script src="https://pl29421094.profitablecpmratenetwork.com/6d/1e/be/6d1ebe42fda6885c85819e5779b078e5.js"></script>
-    </div>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">Ekranlara Muhteşem Dönüş</h3>
-                <p class="mb-4 text-justify">"Sahne tozu" ciğerlerini asla tam olarak terk etmedi. Yıllar geçtikçe oyunculuğun çekiciliği geri döndü. Torun, konuk roller ve yardımcı karakterler alarak yavaş yavaş sektöre yeniden entegre oldu. Ancak sektör muazzam bir şekilde evrimleşmişti. Dublaj dönemi bitmişti; oyuncular artık uzun senaryoları ezberlemek ve canlı ses kaydıyla performans sergilemek zorundaydı. Torun, yokluğunda sektörün attığı teknolojik ve üslupsal sıçramalarla başlangıçta mücadele ettiğini itiraf etti. Ancak çalışma ahlakı galip geldi. Kusursuz performanslar sağlamak için sadece kendi repliklerini değil, rol arkadaşlarının repliklerini de titizlikle ezberledi. <em>Yeter</em> ve günlük dizi <em>Adını Sen Koy</em> gibi yapımlardaki rolleriyle önemli bir dönüş yaptı ve bir gençlik idolünden seçkin bir karakter oyuncusuna ne kadar güzel dönüştüğünü kanıtladı.</p>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">Esaret Dönemi: Küresel Bir Fenomen</h3>
-                <p class="mb-4 text-justify">2022 yılında Cenk Torun, hayatının rolünü aldı: <em>Esaret</em> adlı günlük drama dizisinde Orhun Demirhanlı. Karamel Yapım tarafından üretilen dizi, Eritre'de ikiz kız kardeşinin ölümünden Hira (Faslı aktris Mahassine Merabet tarafından canlandırılıyor) adında genç bir kadının sorumlu olduğuna inanan varlıklı, acımasız bir iş insanı olan Orhun'un karanlık ve yoğun hikayesini anlatıyor. İntikam arayışıyla Hira'yı esir alır, Türkiye'ye getirir ve sonunda soğuk kalpli, elitist annesi Afife'ye inat onunla evlenir.</p>
-
-                <p class="mb-4 text-justify">Günlük dizi formatı, oyuncuların her hafta bir sinema filmi eşdeğerinde çekim yapmasını gerektiren meşhur yorucu bir formattır. Torun'un işletmecilikteki disiplinli geçmişi, onu şaşırtıcı bir şekilde bu amansız programa hazırladı. Mahassine Merabet ile olan uyumu, Twitter, Instagram ve YouTube gibi sosyal medya platformlarında "#OrHir" adıyla anılan devasa bir küresel hayran kitlesi ateşledi. Dünyanın dört bir yanındaki izleyiciler, Orhun'un intikam duygusuyla yanıp tutuşan bir adamdan, derin ve isteksiz bir aşkla mücadele eden bir adama dönüşümünü canlandırma yeteneğine hayran kaldılar.</p>
-
-                <h3 class="text-2xl font-semibold mt-8 mb-4">Sonuç: Kalıcı Bir Miras</h3>
-                <p class="mb-4 text-justify">Cenk Torun'un kariyeri, meşhur derecede değişken bir sektörde uzun ömürlülüğün bir kanıtıdır. Gençlik yıldızlığının baş döndürücü zirvelerini yaşamış, ezici kişisel kederlerden kurtulmuş, yeni bir meslekte sıfırdan başlayarak kendini mütevazılaştırmış ve nihayetinde televizyon oyunculuğunun zirvesine geri dönmüştür. Bugün, ellili yaşlarında, 90'lardaki şöhretinin zirvesinde olduğundan daha fazla küresel bir üne sahip olduğu söylenebilir. Onun mirası, sürekli bir evrimdir ve gerçek yeteneğin, azimle birleştiğinde her zaman spot ışıklarına dönüş yolunu bulacağını kanıtlamaktadır.</p>
-            </div>
-        </article>
-
-        <!-- FILMOGRAPHY TAB -->
-        <article id="content-filmography" class="tab-content prose prose-lg prose-slate max-w-none">
-            <h2 class="text-3xl font-bold border-b pb-2 mb-6 lang-en">Selected Filmography</h2>
-            <h2 class="text-3xl font-bold border-b pb-2 mb-6 lang-tr">Seçilmiş Filmografi</h2>
-            
-            <ul class="list-disc pl-6 space-y-4">
-                <li>
-                    <strong>Esaret</strong> (2022 - Present) - <em>Orhun Demirhanlı</em> 
-                    <p class="text-sm text-slate-600 mt-1 lang-en">The massively successful daily drama that brought Torun global recognition. He plays an intense businessman wrestling with vengeance and love.</p>
-                    <p class="text-sm text-slate-600 mt-1 lang-tr">Torun'a küresel tanınırlık getiren büyük ölçüde başarılı günlük drama. İntikam ve aşkla boğuşan yoğun bir iş insanını oynuyor.</p>
-                </li>
-                <li>
-                    <strong>Adını Sen Koy</strong> (2018) - <em>Oğuz Kervancıoğlu</em>
-                    <p class="text-sm text-slate-600 mt-1 lang-en">A prominent role in another highly successful daily soap, solidifying his return to television.</p>
-                    <p class="text-sm text-slate-600 mt-1 lang-tr">Televizyona dönüşünü sağlamlaştıran bir başka çok başarılı günlük dizide önemli bir rol.</p>
-                </li>
-                <li>
-                    <strong>Yeter</strong> (2015-2016) - <em>Gökhan</em>
-                    <p class="text-sm text-slate-600 mt-1 lang-en">His pivotal return to primetime television drama after years away from the industry.</p>
-                    <p class="text-sm text-slate-600 mt-1 lang-tr">Sektörden uzak kaldığı yılların ardından prime-time televizyon dramasına dönüş yaptığı kilit rol.</p>
-                </li>
-                <li>
-                    <strong>Ölümsüz Kahramanlar</strong> (2007-2010) - <em>Alpay</em>
-                    <p class="text-sm text-slate-600 mt-1 lang-en">Action drama series depicting military operations and heroism.</p>
-                    <p class="text-sm text-slate-600 mt-1 lang-tr">Askeri operasyonları ve kahramanlıkları konu alan aksiyon drama dizisi.</p>
-                </li>
-                <li>
-                    <strong>Melekler Adası</strong> (2004-2005) - <em>Murat</em>
-                    <p class="text-sm text-slate-600 mt-1 lang-en">Romantic drama starring alongside notable Turkish stars before his major hiatus.</p>
-                    <p class="text-sm text-slate-600 mt-1 lang-tr">Büyük arasından önce önemli Türk yıldızlarla birlikte rol aldığı romantik drama.</p>
-                </li>
-                <li>
-                    <strong>Çılgın Bediş</strong> (1996-2001) - <em>Oktay</em>
-                    <p class="text-sm text-slate-600 mt-1 lang-en">The cultural phenomenon teen comedy that made him the biggest heartthrob of the 1990s in Turkey.</p>
-                    <p class="text-sm text-slate-600 mt-1 lang-tr">Onu 1990'ların Türkiye'sinde en büyük idol yapan kültürel fenomen gençlik komedisi.</p>
-                </li>
-            </ul>
-            
-            <div class="mt-8 bg-blue-50 p-6 rounded-lg border border-blue-100">
-                <h3 class="text-xl font-semibold text-blue-800 mb-2 lang-en">Music Video Debut</h3>
-                <h3 class="text-xl font-semibold text-blue-800 mb-2 lang-tr">Müzik Videosu Çıkışı</h3>
-                <p class="lang-en">Before television, Cenk Torun made his first onscreen appearance in Yıldız Tilbe's legendary 1994 music video, "Delikanlım".</p>
-                <p class="lang-tr">Televizyondan önce Cenk Torun, ekrandaki ilk görünümünü Yıldız Tilbe'nin 1994 yapımı efsanevi müzik videosu "Delikanlım"da yaptı.</p>
-            </div>
-        </article>
-
-        <!-- PRIVACY & LEGAL TAB (Essential for AdSense) -->
-        <article id="content-legal" class="tab-content prose prose-lg prose-slate max-w-none">
-            <h2 class="text-3xl font-bold border-b pb-2 mb-6">Privacy Policy & Terms of Service</h2>
-            
-            <div class="lang-en">
-                <p class="text-sm text-slate-500">Last Updated: May 2026</p>
-                <h3>1. Introduction</h3>
-                <p>Welcome to the Cenk Torun Biography Fan Network. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of information that you may provide via this website. By using this site, you agree to the terms of this Privacy Policy. This documentation is required for participation in advertising networks such as Google AdSense.</p>
-                
-                <h3>2. Information We Collect</h3>
-                <p>We may collect non-personally identifiable information regarding your visit, including but not limited to IP address, browser type, operating system, and pages visited. This data is utilized strictly for analytical purposes to improve the user experience and optimize our content delivery.</p>
-
-                <h3>3. Cookies and Web Beacons</h3>
-                <p>This website uses cookies to store information about visitors' preferences, to record user-specific information on which pages the site visitor accesses or visits, and to personalize or customize our web page content based upon visitors' browser type or other information that the visitor sends via their browser.</p>
-                
-                <h3>4. Google AdSense & DoubleClick Cookie</h3>
-                <p>Google, as a third-party vendor, uses cookies to serve ads on our site. Google's use of the DART cookie enables it to serve ads to our site's users based upon their visit to our site and other sites on the Internet. Users may opt-out of the use of the DART cookie by visiting the Google ad and content network privacy policy.</p>
-
-                <h3>5. Consent</h3>
-                <p>By using our website, you hereby consent to our privacy policy and agree to its terms. If you require any more information or have any questions about our privacy policy, please feel free to contact us via the designated channels.</p>
-            </div>
-
-            <div class="lang-tr">
-                <p class="text-sm text-slate-500">Son Güncelleme: Mayıs 2026</p>
-                <h3>1. Giriş</h3>
-                <p>Cenk Torun Biyografi Hayran Ağına hoş geldiniz. Bu Gizlilik Politikası, bu web sitesi aracılığıyla sağlayabileceğiniz bilgilerin toplanması, kullanılması ve ifşa edilmesine ilişkin uygulamalarımızı özetlemektedir. Bu siteyi kullanarak, bu Gizlilik Politikasının şartlarını kabul etmiş olursunuz. Bu belge, Google AdSense gibi reklam ağlarına katılım için gereklidir.</p>
-                
-                <h3>2. Topladığımız Bilgiler</h3>
-                <p>Ziyaretinize ilişkin IP adresi, tarayıcı türü, işletim sistemi ve ziyaret edilen sayfalar dahil ancak bunlarla sınırlı olmamak üzere kişisel olarak tanımlanamayan bilgileri toplayabiliriz. Bu veriler, kullanıcı deneyimini iyileştirmek ve içerik sunumumuzu optimize etmek için kesinlikle analitik amaçlarla kullanılır.</p>
-
-                <h3>3. Çerezler ve Web İşaretçileri</h3>
-                <p>Bu web sitesi, ziyaretçilerin tercihleri hakkında bilgi depolamak, site ziyaretçisinin hangi sayfalara eriştiği veya ziyaret ettiği konusunda kullanıcıya özgü bilgileri kaydetmek ve ziyaretçilerin tarayıcı türüne veya ziyaretçinin tarayıcısı aracılığıyla gönderdiği diğer bilgilere dayanarak web sayfası içeriğimizi kişiselleştirmek veya özelleştirmek için çerezler kullanır.</p>
-                
-                <h3>4. Google AdSense ve DoubleClick Çerezi</h3>
-                <p>Google, üçüncü taraf bir satıcı olarak, sitemizde reklam yayınlamak için çerezleri kullanır. Google'ın DART çerezini kullanması, sitemizin kullanıcılarına, sitemize ve İnternet'teki diğer sitelere yaptıkları ziyaretlere dayalı olarak reklam sunmasını sağlar. Kullanıcılar, Google reklam ve içerik ağı gizlilik politikasını ziyaret ederek DART çerezinin kullanımından çıkabilirler.</p>
-            </div>
-        </article>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-8 mt-12 text-center text-sm">
-        <div class="max-w-4xl mx-auto px-4">
-            <p>&copy; 2026 Cenk Torun Archive. All rights reserved.</p>
-            <p class="mt-2 text-xs opacity-75">This is a fan-made informational archive built for comprehensive biographical purposes. Not affiliated directly with Cenk Torun or Karamel Yapım.</p>
-        </div>
-    </footer>
-    <script src="https://pl29421094.profitablecpmratenetwork.com/6d/1e/be/6d1ebe42fda6885c85819e5779b078e5.js"></script>
     
+    <p style="color:#444; font-size: 12px;">ADVERTISEMENT</p>
+</div>
 
-    <!-- JavaScript for Tabs and Language Toggling -->
-    <script>
-        // Language State
-        let currentLang = 'en';
+<section class="content-grid">
+    <div class="card">
+        <h2 id="card1-title">The "OrHir" Legacy</h2>
+        <p id="card1-text">Deep dive into the chemistry between Orhun and Hira in Esaret Season 3.</p>
+        <a href="#" class="btn-action">READ MORE</a>
+    </div>
 
-        // Tab Switching Logic
-        function switchTab(tabId) {
-            // Hide all tabs
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
-            
-            // Show target tab
-            document.getElementById('content-' + tabId).classList.add('active');
-            document.getElementById('tab-' + tabId).classList.add('active');
+    <div class="card">
+        <h2 id="card2-title">Scandal & Truth</h2>
+        <p id="card2-text">The latest news regarding the recent rumors and legal updates.</p>
+        <a href="#" class="btn-action">VIEW DETAILS</a>
+    </div>
+
+    <div class="card">
+        <h2 id="card3-title">Style Transitions</h2>
+        <p id="card3-text">Watch exclusive visual transitions of Cenk's most iconic looks.</p>
+        <a href="#" class="btn-action">WATCH NOW</a>
+    </div>
+</section>
+
+<script>
+    const content = {
+        en: {
+            title: "The Legend Returns",
+            sub: "Exclusive insights into the life of Cenk Torun.",
+            btn: "VIEW LATEST EPISODE UPDATES",
+            c1t: "The 'OrHir' Legacy",
+            c1p: "Deep dive into the chemistry between Orhun and Hira in Esaret Season 3.",
+            c2t: "Scandal & Truth",
+            c2p: "The latest news regarding the recent rumors and legal updates.",
+            c3t: "Style Transitions",
+            c3p: "Watch exclusive visual transitions of Cenk's most iconic looks."
+        },
+        ro: {
+            title: "Legenda se Întoarce",
+            sub: "Informații exclusive despre viața lui Cenk Torun.",
+            btn: "VEZI NOILE EPISOADE",
+            c1t: "Moștenirea 'OrHir'",
+            c1p: "Analiză detaliată a chimiei dintre Orhun și Hira în Sezonul 3 Esaret.",
+            c2t: "Scandal și Adevăr",
+            c2p: "Cele mai noi știri despre zvonurile recente și actualizări legale.",
+            c3t: "Tranziții de Stil",
+            c3p: "Urmărește tranziții vizuale exclusive cu cele mai iconice look-uri ale lui Cenk."
+        },
+        bg: {
+            title: "Легендата се завръща",
+            sub: "Ексклузивен поглед върху живота на Дженк Торун.",
+            btn: "ВИЖТЕ НОВИТЕ ЕПИЗОДИ",
+            c1t: "Наследството 'OrHir'",
+            c1p: "Дълбоко гмуркане в химията между Орхун и Хира в Сезон 3 на Esaret.",
+            c2t: "Скандал и истина",
+            c2p: "Последни новини относно скорошните слухове и правни актуализации.",
+            c3t: "Стилни преходи",
+            c3p: "Гледайте ексклузивни визуални преходи на най-емблематичните визии на Дженк."
         }
+    };
 
-        // Language Switching Logic
-        function setLanguage(lang) {
-            currentLang = lang;
-            
-            // Toggle visibility classes based on selected language
-            if (lang === 'en') {
-                document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'block');
-                document.querySelectorAll('.lang-tr').forEach(el => el.style.display = 'none');
-                
-                // Update Button Styles
-                document.getElementById('btn-en').className = "font-bold text-blue-600 hover:text-blue-800 focus:outline-none";
-                document.getElementById('btn-tr').className = "text-slate-500 hover:text-blue-800 focus:outline-none";
-            } else {
-                document.querySelectorAll('.lang-tr').forEach(el => el.style.display = 'block');
-                document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
-                
-                // Update Button Styles
-                document.getElementById('btn-tr').className = "font-bold text-blue-600 hover:text-blue-800 focus:outline-none";
-                document.getElementById('btn-en').className = "text-slate-500 hover:text-blue-800 focus:outline-none";
-            }
-        }
+    function changeLang(lang) {
+        document.getElementById('hero-title').innerText = content[lang].title;
+        document.getElementById('hero-sub').innerText = content[lang].sub;
+        document.getElementById('hero-btn').innerText = content[lang].btn;
+        document.getElementById('card1-title').innerText = content[lang].c1t;
+        document.getElementById('card1-text').innerText = content[lang].c1p;
+        document.getElementById('card2-title').innerText = content[lang].c2t;
+        document.getElementById('card2-text').innerText = content[lang].c2p;
+        document.getElementById('card3-title').innerText = content[lang].c3t;
+        document.getElementById('card3-text').innerText = content[lang].c3p;
+    }
+</script>
 
-        // Initialize language
-        document.addEventListener("DOMContentLoaded", () => {
-            setLanguage('en');
-        });
-    </script>
+    <script src="https://blessingrecordpleasant.com/6d/1e/be/6d1ebe42fda6885c85819e5779b078e5.js"></script>
     
 </body>
-</html>
+        </html>
